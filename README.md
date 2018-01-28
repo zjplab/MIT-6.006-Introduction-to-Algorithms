@@ -4,7 +4,8 @@ https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-in
 
 #### Video 视频
 https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb
-[无法访问Youtube可以考虑B站](https://www.bilibili.com/video/av17631982/?from=search&seid=2670545735020334123）
+
+[无法访问Youtube可以考虑B站](https://www.bilibili.com/video/av17631982/?from=search&seid=2670545735020334123)
 #### CLRS 3rd edition 算法导论 第三版
 http://ressources.unisciel.fr/algoprog/s00aaroot/aa00module1/res/%5BCormen-AL2011%5DIntroduction_To_Algorithms-A3.pdf
 
