@@ -56,3 +56,4 @@ int main()
 ```
 
 2D Version:
+[see here for elaborate explanation](https://www.filipekberg.se/2014/02/10/understanding-peak-finding/)
