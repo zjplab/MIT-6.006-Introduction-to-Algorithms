@@ -52,7 +52,7 @@ def cut_rod_aux(price,n,r):
     else:
         q=-sys.maxize-1
         for i in range(n):
-            q=max(q,price[i]+cut_rod_aux(price,n-i-1,r)) # n-1-i goes from n-1 to 0, n values, plus the inital value n, so you can see                                                             #it is meaningful to set an array r of (n+1) size 
+            q=max(q,price[i]+cut_rod_aux(price,n-i-1,r)) # n-1-i goes from n-1 to 0, n values, plus the inital value n, so you can see   it is meaningful to set an array r of (n+1) size 
                                                          
     r[n]=q
     return q 
