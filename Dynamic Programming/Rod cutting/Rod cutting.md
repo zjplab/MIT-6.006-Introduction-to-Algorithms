@@ -38,9 +38,6 @@ int main()
 ```
 import sys
 
-def max(a,b):
-    return a if (a>b) else b
-
 def cut_rod(price,n):
     r=[-sys.maxsize-1]*(n+1)
     #or r=[-sys.maxsize-1 for x in range(0,n+1)]
@@ -57,3 +54,18 @@ def cut_rod_aux(price,n,r):
     r[n]=q
     return q 
 ```    
+
+## Bottom up cut rod
+```
+import sys
+
+def cut_rod_bottom_up(price,n):
+    r=[-sys.maxsize-1]*(n+1)
+    r[0]=0
+    for j in range(1,n+1):
+        q=-sys.maxsize-1
+        for i in range(0,j):
+            q=max(q,price[i]+r[j-i-1])
+        r[j]=q
+    return r[n]        
+```
