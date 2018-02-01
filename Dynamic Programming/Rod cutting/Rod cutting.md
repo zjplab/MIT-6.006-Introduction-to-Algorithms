@@ -34,3 +34,26 @@ int main()
     return 0;
 }
 ```
+## Memoized Rod cuttting 
+```
+import sys
+
+def max(a,b):
+    return a if (a>b) else b
+
+def cut_rod(price,n):
+    r=[-sys.maxsize-1]*(n+1)
+    #or r=[-sys.maxsize-1 for x in range(0,n+1)]
+    return cut_rod_aux(price,n,r)
+
+def cut_rod_aux(price,n,r):
+    if r[n]>=0 return r[n] 
+    if n==0 q=0
+    else:
+        q=-sys.maxize-1
+        for i in range(n):
+            q=max(q,price[i]+cut_rod_aux(price,n-i-1,r)) # n-1-i goes from n-1 to 0, n values, plus the inital value n, so you can see                                                             #it is meaningful to set an array r of (n+1) size 
+                                                         
+    r[n]=q
+    return q 
+```    
