@@ -89,7 +89,7 @@ def cut_rod_bottom_up(price,n):
 def print_cut_rod_solution(price,n):
     (r,s)=cut_rod_bottom_up(price,n)
     while n>0:
-        print("{}\n".format(s[n-1)+1)
-        n-=s[n-1]+1
+        print("{}\n".format(s[n-1)+1))
+       n-=s[n-1]+1
 
 ```
