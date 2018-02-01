@@ -69,3 +69,27 @@ def cut_rod_bottom_up(price,n):
         r[j]=q
     return r[n]        
 ```
+## Bottomed-up rod cutting to show the choices
+```
+import sys
+
+def cut_rod_bottom_up(price,n):
+    r=[-sys.maxsize-1]*(n+1)
+    s=[-1]*n
+    r[0]=0
+    for j in range(1,n+1):
+        q=-sys.maxsize-1
+        for i in range(0,j):
+            if q<price[i]+r[j-1-i]:
+                q=price[i]+r[j-1-i]
+                s[j-1]=i
+        r[j]=q
+    return r,s 
+
+def print_cut_rod_solution(price,n):
+    (r,s)=cut_rod_bottom_up(price,n)
+    while n>0:
+        print("{}\n".format(s[n-1)+1)
+        n-=s[n-1]+1
+
+```
