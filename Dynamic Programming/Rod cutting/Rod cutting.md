@@ -55,7 +55,7 @@ def cut_rod_aux(price,n,r):
     return q 
 ```    
 
-## Bottom up cut rod
+## Bottomed-up rod cutting 
 ```
 import sys
 
