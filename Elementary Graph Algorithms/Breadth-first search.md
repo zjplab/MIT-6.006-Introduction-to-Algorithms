@@ -23,4 +23,14 @@ BFS(g,S)
 
       
       
- 
+//print
+```
+Print_path(G,s,v):
+  if v==s:
+    print v
+  elif v.pi==NIL:
+    print "no path from s to v"
+  else:
+    Print_path(G,s,v.pi)
+    print v
+```    
