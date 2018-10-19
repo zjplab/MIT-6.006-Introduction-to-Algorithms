@@ -17,5 +17,5 @@ https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844
 
 https://s.taobao.com/search?q=%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA+%E7%AC%AC%E4%B8%89%E7%89%88&imgfile=&js=1&stats_click=search_radio_all%3A1&initiative_id=staobaoz_20180126&ie=utf8
 
-
-This somewhat ambitious repo is meant to write most, if not all, of the programs and answers to the exercises covered by the 6.006 lecture and CLRS in the next few years.
+#### I recommend [this stie](https://walkccc.github.io/CLRS/). You can find almost all the answers of CLRS here.
+From now on in light of my limited time and energy, updates will be mainly related LeetCode problems. Do LeetCode questions in a chapter/topic oriented manner works espcially for me. I prefer learn anything systematcially. 
