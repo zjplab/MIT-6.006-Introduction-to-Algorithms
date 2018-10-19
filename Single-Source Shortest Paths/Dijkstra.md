@@ -1,7 +1,8 @@
-```c++
+```
 #include <iostream>
 #include <vector>
 #include <queue>
+#include <utility>
 
 using namespace std;
 
@@ -69,8 +70,14 @@ vector<int> DijkstraSP(vector< vector<pair<int, int> > > &adjList, int &start)
         dist.push_back(1000000007); // Define "infinity" as necessary by constraints.
         }
         
+    typedef pair<int, int> mypair;
+    struct compare{
+      bool operator() (const mypair &p1, const mypair &p2){
+          return p1.second > p2.second ;
+      }   
+    };
     // Create a PQ.
-    priority_queue<pair<int, int>, vector< pair<int, int> >, greater<pair<int, int> > > pq;
+    priority_queue<pair<int, int>, vector< pair<int, int> >, compare > pq;
     
     // Add source to pq, where distance is 0.
     pq.push(make_pair(start, 0));
@@ -130,4 +137,4 @@ int main()
     
     return 0;
     }
-    ```
+```
